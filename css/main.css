@@ -1,0 +1,376 @@
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+:root {
+  --containerWidth: 1280px;
+}
+.header-box {
+  width: 100%;
+  height: 160px;
+  background-color: #050402;
+}
+.container {
+  max-width: var(--containerWidth);
+  width: 100%;
+  height: 100%;
+}
+.header {
+  width: 100%;
+  height: 100%;
+}
+.h-top {
+  width: 100%;
+  height: 66px;
+}
+.h-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-item {
+  max-width: 373px;
+  min-height: 46px;
+  display: flex;
+}
+.h-left {
+  margin: 0;
+  margin-left: 0;
+  margin-top: 15px;
+}
+.h-center {
+  margin: 0;
+}
+.h-right {
+  margin: 0;
+  margin-right: 0;
+}
+.h-link1 {
+  width: 156px;
+  height: 100%;
+  margin-left: 0;
+  margin-right: 56px;
+}
+.h-link2 {
+  width: 161px;
+  height: 100%;
+}
+.h-link__phone {
+  width: 100%;
+  height: 50%;
+}
+.h-link__phone > i {
+  color: white;
+}
+.h-link__phone > a {
+  padding-left: 25px;
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: white;
+}
+.h-link__phone > a:hover {
+  color: #bb8c5f;
+}
+.h-link__message {
+  width: 100%;
+  height: 50%;
+  display: flex;
+  align-items: center;
+}
+.h-link__message > a {
+  color: white;
+  font-family: Jost;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.h-link__message > a:hover {
+  color: #bb8c5f;
+}
+.h-link__email {
+  width: 100%;
+  display: flex;
+  color: white;
+}
+.h-link__email > a {
+  color: white;
+}
+
+.h-btns {
+  width: 3750px;
+  height: 46px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding-left: 30%;
+}
+.h-price-list {
+  width: 88px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+.h-price {
+  font-family: Jost;
+  font-size: 15px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+}
+.h-shops {
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  color: white;
+  cursor: pointer;
+}
+.shop-number {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  color: white;
+  background-color: #bb8c5f;
+  z-index: 1;
+  top: -5px;
+  right: -5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h-shops > i {
+  font-size: 20px;
+}
+.h-like-item {
+  font-size: 20px;
+  margin-right: 0;
+}
+.h-like-center {
+  margin-left: 0;
+}
+.h-like-item > a > i {
+  color: white;
+}
+.h-c-border {
+  width: 100%;
+  margin-top: 10px;
+}
+.h-border {
+  width: 100%;
+  height: 1px;
+  border: 1px solid #524336;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.h-border > i {
+  color: #524336;
+}
+.h-border > .fa-caret-right {
+  margin-left: -3px;
+}
+.h-border > .fa-caret-left {
+  margin-right: -3px;
+}
+.h-bottom {
+  width: 100%;
+  height: 61px;
+  padding-top: 20px;
+}
+.bottom-list {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.h-bottom-left {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.h-bottom-right {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.Catalog-dropDown {
+  width: 125px;
+  height: 35px;
+  margin-left: 0;
+}
+.Catalog {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  cursor: pointer;
+}
+.Catalog > p {
+  font-family: Jost;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+}
+.Catalog > i {
+  font-size: 22px;
+  color: #bb8c5f;
+}
+.Catalog-Search {
+  max-width: 418px;
+  width: 100%;
+  height: 44px;
+  border: 1px solid #524336;
+  display: flex;
+  align-items: center;
+  margin-right: 0;
+}
+.Catalog-Search > i {
+  width: 44px;
+  height: 44px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+  color: #636b78;
+  margin-left: 0;
+}
+.Catalog-Search > input {
+  max-width: 374px;
+  width: 100%;
+  height: 100%;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  padding: 0 5px;
+  color: white;
+}
+.h-bottom-list {
+  width: 100%;
+  height: 80px;
+  display: flex;
+}
+.h-bottom-item {
+  max-width: 100px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: bottom;
+  cursor: pointer;
+  margin-right: 0;
+}
+.h-bottom-item > a {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  color: white;
+}
+.h-bottom-item > a:hover {
+  color: #bb8c5f;
+}
+.h-bottom-item:hover {
+  background-image: url("/images/bg/iconBg.svg");
+}
+.Catalog-boxs {
+  width: 618px;
+  max-height: 592px;
+  margin-left: 0;
+  display: none;
+  position: absolute;
+  background-color: white;
+  box-shadow: rgba(132, 132, 132, 0.1) 0px 10px 50px;
+}
+.Catalog-box-top{
+  width: 100%;
+  height: 86px;
+  border-bottom: 1px solid #D0D0D0;
+}
+.Catalog-box-btns{
+  width: 300px;
+  height: 86px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 0;
+}
+.Catalog-box-btn{
+  font-family: Jost;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 150%;
+  height: 30px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-position: bottom ;
+  color: #3E424B;
+  background-size: 100%;
+  cursor: pointer;
+}
+.Catalog-items{
+  width: 100%;
+  height: 100%;
+  padding: 40px 50px 50px 50px;
+  display: flex;
+}
+.Catalog-item{
+  max-width: 300px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.catalog1{
+  width: 200px;
+}
+.Catalog-item>a{
+  width: 100%;
+  font-family: Jost;
+font-size: 17px;
+font-style: normal;
+font-weight: 500;
+line-height: 150%;
+color: #050402;
+}
+.activeText{
+  color: #bb8c5f;
+  background-image: url("/images/bg/iconLine.svg");
+}
+.activeCatalog{
+ display: block;
+ display: flex;
+}
+.deActiveCatalog{
+  display: none;
+}
+.hero-box{
+  width: 100%;
+  height: 700px;
+  background-color: #050402;
+  background-image: url("/images/bg/bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.hero{
+  width: 100%;
+  height: 100%;
+}
