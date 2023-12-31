@@ -50,3 +50,71 @@ document.querySelector(".Catalog").addEventListener("click", function () {
         CatalogBoxs.style.display = "none";
     }
 });
+let currentSlide = 0;
+const slides = document.querySelectorAll('.hero-text');
+const prevBtn = document.querySelector('.hero-btn-1');
+const nextBtn = document.querySelector('.hero-btn-2');
+const tabBtn = document.querySelectorAll(".tab-btn");
+
+function showSlide(index) {
+    if (index < 0) {
+        currentSlide = slides.length - 1;
+    } else if (index >= slides.length) {
+        currentSlide = 0;
+    } else {
+        currentSlide = index;
+    }
+    const translateValue = -currentSlide * 100 + '%';
+    slides.forEach(slide => {
+        slide.style.transform = 'translateY(' + translateValue + ')';
+    });
+}
+
+tabBtn.forEach((item, idx) => {
+    item.addEventListener("click", function () {
+        hideBtnBG(item);
+        item.style.background = "#bb8c5f";
+        showSlide(idx);
+        showBtnBg();
+    });
+});
+
+function hideBtnBG(clickedItem) {
+    tabBtn.forEach(item => {
+        if (item !== clickedItem) {
+            item.style.background = "";
+        }
+    });
+}
+
+prevBtn.addEventListener('click', function () {
+    prevSlide();
+    showBtnBg();
+});
+
+nextBtn.addEventListener('click', function () {
+    nextSlide();
+    showBtnBg();
+});
+
+function prevSlide() {
+    showSlide(currentSlide - 1);
+    hideBtnBG();
+}
+
+function nextSlide() {
+    showSlide(currentSlide + 1);
+    hideBtnBG();
+}
+
+function showBtnBg() {
+    tabBtn.forEach((item, i=0) => {
+        if (i === currentSlide) {
+            item.style.background = "#bb8c5f";
+        } else {
+            item.style.background = "";
+        }
+    });
+}
+
+showBtnBg()
