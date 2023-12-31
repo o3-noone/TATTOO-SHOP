@@ -1,3 +1,62 @@
+const baza=[
+  {
+    id:1,
+    name:"Foxxx Kitsune Mini Black Vintage RCA",
+    type:"new",
+    images:"/images/bg/item1.png",
+    price:"6 000 ₽"
+  },
+  {
+    id:2,
+    name:"Foxxx Viper Fox Golden Vintage Lot #1 RCA",
+    type:"new",
+    images:"/images/bg/item2.png",
+    price:"8 730 ₽"
+  },
+  {
+    id:3,
+    name:"Нитровиниловые перчатки Wally Plastic S",
+    type:"new",
+    images:"/images/bg/item3.png",
+    price:"20 ₽"
+  },
+  {
+    id:4,
+    name:"Forever Cartridge Grip Ergo 30 mm Огненно-Рыжий",
+    type:"new",
+    images:"/images/bg/item4.png",
+    price:"2 037 ₽"
+  },
+  {
+    id:5,
+    name:"Verge Direct 2.1 Pink gip EGO 4 mm liners",
+    type:"new",
+    images:"/images/bg/item5.png",
+    price:"2 037 ₽"
+  },
+  {
+    id:6,
+    name:"Deuce Machines Direct Drive #7 RCA Samurai",
+    type:"new",
+    images:"/images/bg/item6.png",
+    price:"8 000 ₽"
+  },
+  {
+    id:7,
+    name:"Cyborg Machines Alter Rotary Axis Cross Sexy Nymph",
+    type:"new",
+    images:"/images/bg/item7.png",
+    price:"11 000 ₽"
+  },
+  {
+    id:8,
+    name:"Verge Direct 2.1 Gunmetal",
+    type:"new",
+    images:"/images/bg/item8.png",
+    price:"10 900 ₽"
+  },
+]
+
 const tabs = document.querySelectorAll(".Catalog-box-btn");
 const tabsContent = document.querySelectorAll(".Catalog-items");
 function hideTabContent() {
@@ -118,3 +177,54 @@ function showBtnBg() {
 }
 
 showBtnBg()
+
+const CardList = document.querySelector(".Card-List");
+
+window.addEventListener("DOMContentLoaded", function () {
+  const data = baza.map((item) => {
+    return `
+      <div class="Card-item">
+        <div class="Card-item-top" style="background: url(${item.images})">
+          <p>Новинка</p>
+          <div class="top-btns-hero">
+            <i class="fa-regular fa-heart"></i>
+            <i class="fa-solid fa-heart"></i>
+          </div>
+        </div>
+        <div class="item-imgs-btn">
+          <span class="imgs-btn activeSpan"></span>
+          <span class="imgs-btn"></span>
+          <span class="imgs-btn"></span>
+          <span class="imgs-btn"></span>
+        </div>
+        <div class="Card-item-name">
+          <h4>${item.name}</h4>
+        </div>
+        <div class="Card-item-price">
+          <h4>${item.price}</h4>
+        </div>
+        <div class="Card-item-btn">Добавить в корзину</div>
+      </div>
+    `;
+  }).join("");
+
+  CardList.innerHTML = data;
+
+  const heartBtn1 = document.querySelectorAll(".fa-regular.fa-heart");
+  const heartBtn2 = document.querySelectorAll(".fa-solid.fa-heart");
+
+  heartBtn1.forEach((item) => {
+    item.addEventListener("click", function () {
+      item.style.display = "none";
+      item.nextElementSibling.style.display = "block";
+    });
+  });
+
+  heartBtn2.forEach((item) => {
+    item.addEventListener("click", function () {
+      item.style.display = "none";
+      item.previousElementSibling.style.display = "block";
+    });
+  });
+});
+
