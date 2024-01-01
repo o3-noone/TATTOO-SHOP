@@ -518,8 +518,14 @@
 .Card-List {
   margin-top: 45px;
   width: 100%;
-  display: flex;
   flex-wrap: wrap;
+}
+.activeCard{
+  display: block;
+  display: flex;
+}
+.deactiveCard{
+  display: none;
 }
 .Card-item {
   width: 289px;
@@ -534,7 +540,6 @@
   width: 100%;
   height: 230px;
   display: flex;
-  /* background-image: url("/images/bg/item1.png"); */
 }
 .Card-item-top > p {
   width: 80px;
