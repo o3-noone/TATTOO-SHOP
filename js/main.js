@@ -234,8 +234,8 @@ function loadCard(list, Card) {
 
   list.innerHTML = data;
 
-  const heartBtn1 = document.querySelectorAll(".fa-regular.fa-heart");
-  const heartBtn2 = document.querySelectorAll(".fa-solid.fa-heart");
+  const heartBtn1 = document.querySelectorAll(".top-btns-hero .fa-regular");
+  const heartBtn2 = document.querySelectorAll(".top-btns-hero .fa-solid");
 
   heartBtn1.forEach((item) => {
     item.addEventListener("click", function () {
