@@ -94,10 +94,10 @@ tabs.forEach((tab, index) => {
     hideTabContent();
     showTabContent(index);
     if (index == 1) {
-      CatalogBoxs.style.maxWidth = "1183px";
-      CatalogBoxs.style.width = "100%";
+      CatalogBoxs.classList.add("KatalogActiveBtn")
     } else {
-      CatalogBoxs.style.width = "630px";
+      CatalogBoxs.classList.remove("KatalogActiveBtn")
+
     }
   });
 });
@@ -265,7 +265,7 @@ function hideCardContent() {
   });
 }
 
-function showCardContent(i = 0) {
+function showCardContent(i=0) {
   CardContent.forEach((item) => {
     item.classList.add("deactiveCard");
     item.classList.remove("activeCard");

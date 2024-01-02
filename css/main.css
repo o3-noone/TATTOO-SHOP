@@ -527,11 +527,11 @@ body{
 .Card-List {
   margin-top: 45px;
   width: 100%;
-  flex-wrap: wrap;
 }
 .activeCard {
   display: block;
-  display: flex;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
 }
 .deactiveCard {
   display: none;
@@ -691,6 +691,10 @@ body{
 .Katalog-box {
   width: 100%;
   background-color: #eee;
+}
+.KatalogActiveBtn{
+  max-width: 1183px;
+  width: 100%;
 }
 .Katalog {
   width: 100%;
@@ -908,8 +912,7 @@ body{
   max-width: 1568px;
   width: 100%;
   min-height: 635px;
-  display: grid;
-  grid-template-columns: auto auto;
+  display: flex;
   margin-left: 0;
 }
 .Creater-Img {
@@ -922,7 +925,8 @@ body{
   height: 100%;
 }
 .Creater-Text {
-  width: 583px;
+  max-width: 583px;
+  width: 100%;
   margin-right: 0;
   padding: 66px 0;
 }
@@ -1107,8 +1111,7 @@ body{
   background-position: center;
 }
 .Contact-left {
-  max-width: 523px;
-  width: 100%;
+  width: 523px;
   margin-left: 0;
 }
 .Contact-left > h3 {
@@ -1195,16 +1198,15 @@ body{
 }
 .footer-item1{
   width: 60%;
-  border: 1px solid white;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  border-right: 1px solid #bb8c5f;
 }
 .footer-item2{
   width: 40%;
   height: 100%;
-  border: 1px solid white;
   display: flex;
   align-items: center;
   justify-content: center;
