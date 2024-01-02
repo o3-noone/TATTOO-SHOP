@@ -23,7 +23,7 @@
   width: 100%;
   height: 100%;
 }
-.wrapper{
+.wrapper {
   max-width: var(--wrapperWidth);
   width: 100%;
   height: 100%;
@@ -788,21 +788,21 @@
   margin-right: 0;
   background-image: url("/images/bg/kitem11.png");
 }
-.Banners-box{
+.Banners-box {
   width: 100%;
   background-color: #eee;
-
 }
-.Banners{
+.Banners {
   width: 100%;
   padding-top: 100px;
 }
-.Banners-list{
+.Banners-list {
   width: 100%;
-  height: 470px;
+  min-height: 470px;
+  height: 100%;
   display: flex;
 }
-.Banners-item{
+.Banners-item {
   width: 49%;
   height: 470px;
   background-repeat: no-repeat;
@@ -810,41 +810,276 @@
   background-size: contain;
   display: grid;
   position: relative;
-  padding: 40px 0;
+ padding: 40px 0;
 }
-.Banners-item>h3{
+.Banners-item > h3 {
   font-family: Jost;
   font-size: 40px;
   font-style: normal;
   font-weight: 700;
-  line-height: 130%; 
+  line-height: 130%;
   color: #faf6f2;
 }
-.Banners-item>a{
+.Banners-item > a {
   height: 35px;
   align-self: end;
   font-family: Jost;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; 
-color: #bb8c5f;
-background-image: url("/images/bg/iconLineBig.svg");
-background-repeat: no-repeat;
-background-position: bottom;
-background-size: contain;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #bb8c5f;
+  background-image: url("/images/bg/iconLineBig.svg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
 }
-.B-item1{
+.B-item1 {
   margin-left: 0;
   background-image: url("/images/bg/banner1.png");
 }
-.B-item2{
+.B-item2 {
   margin-right: 0;
   background-image: url("/images/bg/banner2.png");
 }
-.B-item2>h3{
+.B-item2 > h3 {
   margin-left: 50px;
 }
-.B-item2>a{
+.B-item2 > a {
   margin-left: 50px;
+}
+
+.Brand-box{
+  width: 100%;
+  background-color: #eee;
+}
+.Brend{
+  width: 100%;
+  padding-top: 100px;
+}
+.Brend-top{
+  width: 100%;
+}
+.Brend-top>h3{
+  font-family: Forum;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+color: #3e424b;
+}
+.Brend-top-all{
+  width: 100%;
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
+.Brend-top-all>div{
+  margin-right: 0;
+  cursor: pointer;
+  font-family: Jost;
+font-size: 25px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+color: #3e424b;
+}
+.Brend-list{
+  width: 100%;
+  display: grid;
+  grid-template-columns: auto auto auto auto auto;
+  gap: 20px 0;
+}
+.Brend-item{
+  cursor: pointer;
+}
+.Creater-box{
+  width: 100%;
+  background-color: #eee;
+}
+.Creater{
+  width: 100%;
+  padding-top: 100px;
+
+}
+.Creater-list{
+  max-width: 1568px;
+  width: 100%;
+  min-height: 635px;
+  display: grid;
+  grid-template-columns:auto auto;
+  margin-left: 0;
+}
+.Creater-Img{
+  width: 930px;
+  height: 100%;
+  margin-left: 0;
+}
+.Creater-Img>img{
+  width: 100%;
+  height: 100%;
+}
+.Creater-Text{
+  width: 583px;
+  margin-right: 0;
+  padding: 66px 0;
+}
+.Creater-Text>h3{
+  font-family: Forum;
+font-size: 50px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+color: #bb8c5f;
+margin-bottom: 20px;
+}
+
+.Creater-Text>span>p{
+  font-family: Jost;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+color: #3e424b;
+}
+.Creater-Text>button{
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+color: #bb8c5f;
+width: 277px;
+height: 70px;
+background-image: url("/images/bg/btn5Bg.png");
+background-repeat: no-repeat;
+background-position: center;
+background-size: contain;
+margin-top: 40px;
+}
+.Reviews-box{
+  width: 100%;
+  background-color: #eee;
+}
+.Reviews{
+  width: 100%;
+  padding-top: 100px;
+  margin-bottom: 50px;
+}
+.Reviews-text{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+}
+.Reviews-text>h3{
+  font-family: Forum;
+font-size: 60px;
+font-style: normal;
+font-weight: 400;
+line-height: 100%;
+color: #3e424b;
+}
+.Reviews-wrapper{
+  width: 100%;
+  overflow: hidden;
+  margin-top: 50px;
+}
+.Reviews-List{
+  height: 357px;
+  display: flex;
+  transition: transform 0.5s ease;
+
+}
+
+.Reviews-item,.clone-item{
+  padding: 0 50px;
+  background-color: black;
+margin: 0 10px;
+}
+
+.activeReviews{
+  min-width: 598px;
+  height: 307px;
+  transition: 1.5s ease;
+  opacity: 1;
+  margin-top: 50px;
+}
+.deActiveReviews{
+  min-width: 20%;
+  height: 257px;
+  transition: 1.5s ease;
+  margin-top: 50px;
+  opacity: 0.3;
+  background-color: black;
+  margin-top: 75px;
+}
+.Reviews-img{
+  margin-top: -50px;
+}
+.Reviews-text{
+  color: white;
+  font-family: Jost;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+margin-top: 30px;
+}
+
+.Reviews-name{
+  color:#bb8c5f ;
+  font-family: Forum;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 130%;
+}
+.Reviews-inst{
+  width: 150px;
+  height: 30px;
+  display: flex;
+  margin-top: 50px;
+  margin-left: 0;
+}
+.Reviews-icon{
+  width: 30px;
+  height: 30px;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #bb8c5f;
+}
+.Reviews-prev{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #bb8c5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+  top: 90%;
+  left: 15%;
+  cursor: pointer;
+}
+.Reviews-next{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  border: 1.5px solid #bb8c5f;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #eee;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+  top: 90%;
+  right: 15%;
+  cursor: pointer;
 }
