@@ -5,6 +5,9 @@
   list-style: none;
   text-decoration: none;
 }
+body{
+  background-color: #eee;
+}
 :root {
   --containerWidth: 1280px;
   --wrapperWidth: 1920px;
@@ -810,7 +813,7 @@
   background-size: contain;
   display: grid;
   position: relative;
- padding: 40px 0;
+  padding: 40px 0;
 }
 .Banners-item > h3 {
   font-family: Jost;
@@ -849,167 +852,165 @@
   margin-left: 50px;
 }
 
-.Brand-box{
+.Brand-box {
   width: 100%;
   background-color: #eee;
 }
-.Brend{
+.Brend {
   width: 100%;
   padding-top: 100px;
 }
-.Brend-top{
+.Brend-top {
   width: 100%;
 }
-.Brend-top>h3{
+.Brend-top > h3 {
   font-family: Forum;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%;
-color: #3e424b;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #3e424b;
 }
-.Brend-top-all{
+.Brend-top-all {
   width: 100%;
   height: 30px;
   display: flex;
   align-items: center;
 }
-.Brend-top-all>div{
+.Brend-top-all > div {
   margin-right: 0;
   cursor: pointer;
   font-family: Jost;
-font-size: 25px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%;
-color: #3e424b;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #3e424b;
 }
-.Brend-list{
+.Brend-list {
   width: 100%;
   display: grid;
   grid-template-columns: auto auto auto auto auto;
   gap: 20px 0;
 }
-.Brend-item{
+.Brend-item {
   cursor: pointer;
 }
-.Creater-box{
+.Creater-box {
   width: 100%;
   background-color: #eee;
 }
-.Creater{
+.Creater {
   width: 100%;
   padding-top: 100px;
-
 }
-.Creater-list{
+.Creater-list {
   max-width: 1568px;
   width: 100%;
   min-height: 635px;
   display: grid;
-  grid-template-columns:auto auto;
+  grid-template-columns: auto auto;
   margin-left: 0;
 }
-.Creater-Img{
+.Creater-Img {
   width: 930px;
   height: 100%;
   margin-left: 0;
 }
-.Creater-Img>img{
+.Creater-Img > img {
   width: 100%;
   height: 100%;
 }
-.Creater-Text{
+.Creater-Text {
   width: 583px;
   margin-right: 0;
   padding: 66px 0;
 }
-.Creater-Text>h3{
+.Creater-Text > h3 {
   font-family: Forum;
-font-size: 50px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
-color: #bb8c5f;
-margin-bottom: 20px;
+  font-size: 50px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
+  color: #bb8c5f;
+  margin-bottom: 20px;
 }
 
-.Creater-Text>span>p{
+.Creater-Text > span > p {
   font-family: Jost;
-font-size: 17px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%;
-color: #3e424b;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #3e424b;
 }
-.Creater-Text>button{
+.Creater-Text > button {
   border: none;
   outline: none;
   cursor: pointer;
   text-align: center;
-font-family: Jost;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%;
-color: #bb8c5f;
-width: 277px;
-height: 70px;
-background-image: url("/images/bg/btn5Bg.png");
-background-repeat: no-repeat;
-background-position: center;
-background-size: contain;
-margin-top: 40px;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #bb8c5f;
+  width: 277px;
+  height: 70px;
+  background-image: url("/images/bg/btn5Bg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-top: 40px;
 }
-.Reviews-box{
+.Reviews-box {
   width: 100%;
   background-color: #eee;
 }
-.Reviews{
+.Reviews {
   width: 100%;
   padding-top: 100px;
-  margin-bottom: 50px;
 }
-.Reviews-text{
+.Reviews-text {
   width: 100%;
   height: 100px;
   display: flex;
   align-items: center;
 }
-.Reviews-text>h3{
+.Reviews-text > h3 {
   font-family: Forum;
-font-size: 60px;
-font-style: normal;
-font-weight: 400;
-line-height: 100%;
-color: #3e424b;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #3e424b;
 }
-.Reviews-wrapper{
+.Reviews-wrapper {
   width: 100%;
   overflow: hidden;
   margin-top: 50px;
 }
-.Reviews-List{
+.Reviews-List {
   height: 357px;
   display: flex;
   transition: transform 0.5s ease;
-
 }
 
-.Reviews-item,.clone-item{
+.Reviews-item,
+.clone-item {
   padding: 0 50px;
   background-color: black;
-margin: 0 10px;
+  margin: 0 10px;
 }
 
-.activeReviews{
+.activeReviews {
   min-width: 598px;
   height: 307px;
   transition: 1.5s ease;
   opacity: 1;
   margin-top: 50px;
 }
-.deActiveReviews{
+.deActiveReviews {
   min-width: 20%;
   height: 257px;
   transition: 1.5s ease;
@@ -1018,35 +1019,35 @@ margin: 0 10px;
   background-color: black;
   margin-top: 75px;
 }
-.Reviews-img{
+.Reviews-img {
   margin-top: -50px;
 }
-.Reviews-text{
+.Reviews-text {
   color: white;
   font-family: Jost;
-font-size: 17px;
-font-style: normal;
-font-weight: 400;
-line-height: 140%;
-margin-top: 30px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  margin-top: 30px;
 }
 
-.Reviews-name{
-  color:#bb8c5f ;
+.Reviews-name {
+  color: #bb8c5f;
   font-family: Forum;
-font-size: 20px;
-font-style: normal;
-font-weight: 400;
-line-height: 130%;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 130%;
 }
-.Reviews-inst{
+.Reviews-inst {
   width: 150px;
   height: 30px;
   display: flex;
   margin-top: 50px;
   margin-left: 0;
 }
-.Reviews-icon{
+.Reviews-icon {
   width: 30px;
   height: 30px;
   font-size: 20px;
@@ -1055,7 +1056,7 @@ line-height: 130%;
   justify-content: center;
   color: #bb8c5f;
 }
-.Reviews-prev{
+.Reviews-prev {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -1064,12 +1065,12 @@ line-height: 130%;
   align-items: center;
   justify-content: center;
   background-color: #eee;
-  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
   top: 90%;
   left: 15%;
   cursor: pointer;
 }
-.Reviews-next{
+.Reviews-next {
   position: absolute;
   width: 50px;
   height: 50px;
@@ -1078,8 +1079,232 @@ line-height: 130%;
   align-items: center;
   justify-content: center;
   background-color: #eee;
-  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.10);
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.1);
   top: 90%;
   right: 15%;
   cursor: pointer;
+}
+.Contact-box {
+  width: 100%;
+  padding-top: 150px;
+  background-color: #eee;
+}
+.Contact {
+  max-width: 1568px;
+  width: 100%;
+  min-height: 562px;
+  display: flex;
+  margin-right: 0;
+  padding-left: 10px;
+}
+.Contact-right {
+  width: 952px;
+  height: 562px;
+  background-image: url("/images/bg/bgContact.png");
+  margin-right: 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+}
+.Contact-left {
+  max-width: 523px;
+  width: 100%;
+  margin-left: 0;
+}
+.Contact-left > h3 {
+  font-family: Forum;
+  font-size: 60px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 100%;
+  color: #3e424b;
+}
+.Contact-left > p {
+  font-family: Jost;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 115%;
+  color: #3e424b;
+  margin: 30px 0;
+}
+
+.Contact-left > div {
+  font-family: Jost;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 140%;
+  color: #636b78;
+}
+.Contact-left > input {
+  width: 392px;
+  height: 70px;
+  margin: 10px 0;
+  padding-left: 30px;
+  border: none;
+  outline: none;
+  font-size: 18px;
+}
+.Contact-left > span {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 30px;
+}
+.Contact-left > span > input {
+  margin-left: 0;
+}
+.Contact-left > span > p {
+  color: #636b78;
+  margin-left: -50px;
+}
+
+.Contact-left > button {
+  width: 275px;
+  height: 70px;
+  background-image: url("/images/bg/btnBg.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: center;
+  font-family: Jost;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 150%;
+  color: #faf6f2;
+  margin-top: 20px;
+}
+.footer-box{
+  width: 100%;
+  min-height: 400px;
+  margin-top: 150px;
+  background-color: #050402;
+}
+.footer-list{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-item1{
+  width: 60%;
+  border: 1px solid white;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-item2{
+  width: 40%;
+  height: 100%;
+  border: 1px solid white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-left1{
+height: 141px;
+width: 238px;
+display: grid;
+margin-left: 0;
+}
+.footer-left1>a{
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 150%;
+  height: 25px;
+  color: white;
+}
+#footer-politika{
+  margin-top: 50px;
+}
+.footer-left2{
+  width: 126px;
+  height: 141px;
+  display: grid;
+}
+.footer-left2>a{
+  font-family: Montserrat;
+font-size: 20px;
+font-style: normal;
+font-weight: 500;
+line-height: 133.5%;
+color: white;
+margin-left: 0;
+height: 25px;
+}
+.footer-left3{
+  width: 100px;
+  height: 141px;
+  display: grid;
+}
+.footer-left3>a{
+  font-family: Montserrat;
+  font-size: 20px;
+  color: white;
+  margin-left: 0;
+  height: 25px;
+}
+.footer-right{
+  width: 350px;
+  height: 130px;
+}
+.footer-right>p{
+  font-family: Jost;
+font-size: 17px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+color: #636b78;
+margin-bottom: 30px;
+}
+.footer-right>a{
+  width: 200px;
+  height: 30px;
+  font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; 
+color: #faf6f2;
+
+}
+.footer-right-top{
+  width: 100%;
+  display: flex;
+}
+.footer-right-top>a{
+  font-family: Jost;
+font-size: 20px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%;
+color: #faf6f2;
+margin-left: 0;
+}
+.footer-right-top>div{
+  width: 144px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.footer-right-top>div>a{
+width: 40px;
+height: 40px;
+border: 1px solid #bb8c5f;
+display: flex;
+align-items: center;
+justify-content: center;
+color: #bb8c5f;
+font-size: 22px;
 }
