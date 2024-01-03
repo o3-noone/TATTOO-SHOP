@@ -222,6 +222,9 @@ body{
   align-items: center;
   justify-content: space-between;
 }
+.h-bottom-btn{
+  display: none;
+}
 .Catalog-dropDown {
   width: 125px;
   height: 35px;
@@ -500,21 +503,34 @@ body{
   height: 100%;
   display: flex;
   align-items: center;
+  overflow-y: hidden;
+
 }
 .Card-top-item {
-  max-width: 250px;
-  height: 90%;
+  height: 50px;
   font-family: Jost;
   font-size: 30px;
   font-style: normal;
   font-weight: 650;
   line-height: 115%;
-  justify-content: center;
   background-repeat: no-repeat;
   background-position: center;
   background-position: bottom;
   background-size: contain;
   cursor: pointer;
+  margin-right: 20px;
+}
+.Card-top-item:nth-child(1){
+  min-width: 170px;
+}
+.Card-top-item:nth-child(2){
+  min-width: 250px;
+}
+.Card-top-item:nth-child(3){
+  min-width: 250px;
+}
+.Card-top-item:nth-child(4){
+  min-width: 250px;
 }
 .Card-active {
   color: #bb8c5f;

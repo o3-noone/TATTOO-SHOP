@@ -1,136 +1,240 @@
 @media screen and (max-width: 1760px) {
-    .Banners-item > h3{
-        margin-top: 50px;
-    }
+  .Banners-item > h3 {
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 1560px) {
-    .Banners-item > h3{
-        margin-top: 100px;
-    }
+  .Banners-item > h3 {
+    margin-top: 100px;
+  }
 }
 @media screen and (max-width: 1320px) {
-    :root {
-        --wrapperWidth: 1220px;
-        --containerWidth: 1220px;
-      }
-    .Creater-list{
-        flex-direction: column;
-        padding: 0 10px;
-    }
-    .Creater-Img{
-        width: 100%;
-    }
-    .Creater-Text{
-        min-width: 100%;
-        margin: 0;
-    }
-    .Reviews{
-        padding-top: 0;
-    }
-    .Contact{
-        
-        flex-direction: column;
-    }
-    .Contact-left, .Contact-right{
-        width: 100%;
-        margin: 0;
-        margin-bottom: 15px;
-    }
-    .Contact-left>h3{
-        width: 100%;
-        text-align: center;
-    }
-    .Contact-left>p{
+  :root {
+    --wrapperWidth: 1220px;
+    --containerWidth: 1220px;
+  }
+  .Creater-list {
+    flex-direction: column;
+    padding: 0 10px;
+  }
+  .Creater-Img {
+    width: 100%;
+  }
+  .Creater-Text {
+    min-width: 100%;
+    margin: 0;
+  }
+  .Reviews {
+    padding-top: 0;
+  }
+  .Contact {
+    flex-direction: column;
+  }
+  .Contact-left,
+  .Contact-right {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  .Contact-left > h3 {
+    width: 100%;
     text-align: center;
-    }
+  }
+  .Contact-left > p {
+    text-align: center;
+  }
 
-    .Contact-left>input{
-        margin: 0;
-        width: 100%;
-    }
-    .Contact-left>span{
-        max-width: 550px;
-        margin-left: 0;
-    }
-    .Banners-list{
-        flex-direction: column;
-    }
-    .Banners-item{
-        width: 100%;
-        margin-bottom: 15px;
-    }
-    .Banners-item>h3{
-        margin-top: 0;
-    }
-    .B-item2>h3{
-        min-width: 150px;
-        text-align: center;
-        margin: 0;
-    }
-    .B-item2>a{
-        text-align: center;
-        margin: 0;
-        background-image: none;
-    }
-    .footer-box{
-        margin-top: 50px;
-    }
+  .Contact-left > input {
+    margin: 0;
+    width: 100%;
+  }
+  .Contact-left > span {
+    max-width: 550px;
+    margin-left: 0;
+  }
+  .Banners-list {
+    flex-direction: column;
+  }
+  .Banners-item {
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .Banners-item > h3 {
+    margin-top: 0;
+  }
+  .B-item2 > h3 {
+    min-width: 150px;
+    text-align: center;
+    margin: 0;
+  }
+  .B-item2 > a {
+    text-align: center;
+    margin: 0;
+    background-image: none;
+  }
+  .footer-box {
+    margin-top: 50px;
+  }
 }
 
 @media screen and (max-width: 1240px) {
-    :root {
-        --wrapperWidth: 1120px;
-        --containerWidth: 1120px;
-      }
-      .Card-List{
-        grid-template-columns: auto auto auto;
-      }
-      .K-item2{
-        width: 500px;
-        margin: 0;
-        margin-right: 0;
-      }
-      .K-item4{
-        margin: 0;
-        margin-right: 0;
-      }
-      .K-item5{
-        margin: 0;
-        margin-left: 0;
-      }
-      .K-item6{
-        margin: 0 auto;
-        margin-right: 0;
-      }
-      .K-item8{
-        margin: 0 auto;
-      }
-      .KatalogActiveBtn{
-        max-width: 1083px;
-        width: 100%;
-      }
+  :root {
+    --wrapperWidth: 1120px;
+    --containerWidth: 1120px;
+  }
+  .Card-List {
+    grid-template-columns: auto auto auto;
+  }
+  .K-item2 {
+    width: 500px;
+    margin: 0;
+    margin-right: 0;
+  }
+  .K-item4 {
+    margin: 0;
+    margin-right: 0;
+  }
+  .K-item5 {
+    margin: 0;
+    margin-left: 0;
+  }
+  .K-item6 {
+    margin: 0 auto;
+    margin-right: 0;
+  }
+  .K-item8 {
+    margin: 0 auto;
+  }
+  .KatalogActiveBtn {
+    max-width: 1083px;
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 1140px) {
-    :root {
-        --wrapperWidth: 1000px;
-        --containerWidth: 1070px;
-      }
-      .Katalog-List{
-        display: grid;
-        grid-template-columns: auto auto;
-      }
-      .KatalogActiveBtn{
-        max-width: 1050px;
-        width: 100%;
-      }
-      .Brend-list{
-        grid-template-columns: auto auto auto auto;
-      }
-      .Card-top-list{
-        overflow-y: hidden;
-      }
-      .Card-top-item{
-        min-width: 170px;
-      }
+  :root {
+    --wrapperWidth: 1000px;
+    --containerWidth: 1070px;
+  }
+  .Katalog-List {
+    display: grid;
+    grid-template-columns: auto auto;
+  }
+  .KatalogActiveBtn {
+    max-width: 1050px;
+    width: 100%;
+  }
+  .Brend-list {
+    grid-template-columns: auto auto auto auto;
+  }
+
+  .Card-top-item {
+    min-width: 170px;
+  }
+  .h-bottom-right {
+    max-width: 350px;
+  }
+  .h-top {
+    display: none;
+  }
+  .header-box {
+    height: 80px;
+  }
+  .h-c-border {
+    display: none;
+  }
+  .h-bottom-left {
+    width: 800px;
+  }
+  .h-bottom-list {
+    display: none;
+  }
+  .h-bottom-btn {
+    display: block;
+    display: flex;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 1100px) {
+  :root {
+    --wrapperWidth: 900px;
+    --containerWidth: 900px;
+  }
+  .K-item1 {
+    margin: 0;
+    width: 92%;
+    margin-left: 0;
+  }
+  .K-item2 {
+    width: 92%;
+    margin-right: 0;
+  }
+  .K-item4 {
+    width: 92%;
+    margin-right: 0;
+  }
+  .K-item6 {
+    width: 92%;
+    margin-right: 0;
+  }
+  .Katalog-item {
+    margin: 0;
+    margin-top: 20px;
+  }
+  .hero-btns {
+    left: 18%;
+    top: 60%;
+    transform: rotate(270deg);
+  }
+  .hero-btn-2,
+  .hero-btn-1 {
+    display: none;
+  }
+}
+@media screen and (max-width: 950px) {
+  :root {
+    --wrapperWidth: 800px;
+    --containerWidth: 800px;
+  }
+  .Banners-item > h3 {
+    margin-top: 50px;
+  }
+  .footer-list {
+    flex-direction: column;
+  }
+  .footer-item1 {
+    width: 100%;
+    border-right: none;
+  }
+  .footer-item2 {
+    width: 100%;
+  }
+  .footer-right {
+    margin-left: 20px;
+  }
+  .K-item1 {
+    width: 80%;
+  }
+  .Brend-list {
+    grid-template-columns: auto auto auto;
+  }
+  .Card-List {
+grid-template-columns: auto auto;
+  }
+  .h-bottom-right {
+    max-width: 250px;
+  }
+  .Card-item {
+    height: 454px;
+    margin: 0;
+    margin-top: 10px;
+    margin-left: 50px;
+  }
+  .Card-item:hover {
+    margin-top: 10px;
+  }
+  .Card-item-btn {
+    display: block;
+    display: flex;
+  }
 }
