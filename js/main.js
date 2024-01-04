@@ -101,13 +101,26 @@ tabs.forEach((tab, index) => {
     }
   });
 });
-document.querySelector(".Catalog").addEventListener("click", function () {
+Catalog.addEventListener("click", function () {
   if (CatalogBoxs.style.display !== "block") {
     CatalogBoxs.style.display = "block";
   } else {
     CatalogBoxs.style.display = "none";
   }
 });
+const MenuBtn = document.querySelector(".MenuBtn");
+const burgerBtn = document.querySelector(".burgerBtn");
+
+MenuBtn.addEventListener("click", function () {
+  if (burgerBtn.classList.contains("fa-bars")) {
+    burgerBtn.classList.remove("fa-bars");
+    burgerBtn.classList.add("fa-xmark");
+  } else {
+    burgerBtn.classList.remove("fa-xmark");
+    burgerBtn.classList.add("fa-bars");
+  }
+});
+
 let currentSlide = 0;
 const slides = document.querySelectorAll(".hero-text");
 const prevBtn = document.querySelector(".hero-btn-1");

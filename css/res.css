@@ -219,13 +219,13 @@
     grid-template-columns: auto auto auto;
   }
   .Card-List {
-grid-template-columns: auto auto;
+    grid-template-columns: auto auto;
   }
   .h-bottom-right {
     max-width: 250px;
   }
   .Card-item {
-    height: 454px;
+    min-height: 454px;
     margin: 0;
     margin-top: 10px;
     margin-left: 50px;
@@ -236,5 +236,188 @@ grid-template-columns: auto auto;
   .Card-item-btn {
     display: block;
     display: flex;
+    font-size: 18px;
   }
+  .K-item11, .K-item10, .K-item9, .K-item8, .K-item7{
+    display: none;
+  }
+
+  .Katalog-btns{
+    display: block;
+    display: flex;
+    align-items: center;
+  }
+  .Banners-item{
+    margin: 0;
+  }
+}
+@media screen and (max-width: 840px) {
+  :root {
+    --wrapperWidth: 720px;
+    --containerWidth: 720px;
+  }
+  .Card-item{
+    margin-left: 30px;
+  }
+  .Banners{
+    padding-top: 0;
+  }
+  .Banners-item{
+    max-height: 450px;
+  }
+  .Banners-item>h3{
+    margin: 0 auto;
+    padding-top: 100px;
+  }
+  .Catalog-boxs{
+    max-width: 90%;
+  }
+  .Catalog-Search{
+    width: 320px;
+  }
+}
+@media screen and (max-width: 768px) {
+  :root {
+    --wrapperWidth: 95%;
+    --containerWidth: 600px;
+  }
+  .hero-box{
+    background-position: 65%;
+  }
+  .CatalogBtn{
+    display: none;
+  }
+  .MenuBtn{
+    display: block;
+    display: flex;
+  }
+  .Card-item{
+    margin-left: 10px;
+  }
+  .Contact-box{
+    padding-top: 50px;
+  }
+  .Contact-right{
+    max-height: 350px;
+  }
+  .Banners-item>h3{
+    padding-top: 60px;
+  }
+.Brend-list{
+  grid-template-columns: auto auto;
+}
+.Catalog-Search{
+  width: 240px;
+}
+.hero-btns{
+  left: 30%;
+}
+.Katalog-List{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  overflow-y: hidden;
+}
+.Katalog-item{
+  margin: 0 10px;
+  min-width: 150px;
+  min-width: 500px;
+}
+.h-bottom-right{
+  max-width: 200px;
+}
+.Banners-item>h3{
+  padding-top: 100px;
+}
+.Banners-item{
+  min-width: 670px;
+  margin: 0 15px;
+}
+.K-item11, .K-item10, .K-item9, .K-item8, .K-item7{
+  display: block;
+}
+.Banners-list{
+  display: flex;
+  flex-direction:row;
+  overflow-y: hidden;
+}
+}
+@media screen and (max-width: 620px) {
+.hero-item{
+  width: 100%;
+}
+.hero-text-item>h3{
+  font-size: 60px;
+}
+.activeCard{
+  display: flex;
+  overflow-y: hidden;
+}
+.Card-item{
+  min-width: 280px;
+}
+.hero-item{
+  min-height: 450px;
+}
+.Catalog-Search{
+  display: none;
+}
+.hero-text-item>p{
+  width: 100%;
+}
+.h-like-item{
+  display: none;
+}
+.h-price-list{
+  margin-right: 15px;
+}
+.Brend-list{
+  grid-template-columns: auto;
+}
+.Reviews-item{
+  width: 400px;
+}
+}
+
+@media screen and (max-width: 470px) {
+.hero-item{
+min-height: 500px;
+}
+
+.hero-item:nth-child(2){
+  display: none;
+}
+.hero-item:nth-child(3){
+  display: none;
+}
+.hero-item:nth-child(4){
+  display: none;
+}
+.hero-item:nth-child(5){
+  display: none;
+}
+.hero-btns{
+  display: none;
+}
+.Contact-left>span>p{
+  margin-left: 0;
+}
+.Brend-top>h3{
+  font-size: 50px;
+}
+.footer-item1{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-left3{
+  margin-left: 15px;
+}
+.footer-right-top{
+  display: flex;
+  flex-wrap: wrap;
+}
+.footer-box{
+  margin: 0;
+  min-height: 500px;
+}
 }

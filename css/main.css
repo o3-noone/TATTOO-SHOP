@@ -228,27 +228,37 @@ body{
 .Catalog-dropDown {
   width: 125px;
   height: 35px;
+  display: flex;
+  align-items: center;
   margin-left: 0;
 }
 .Catalog {
-  width: 100%;
+  width: 90%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
   color: white;
   cursor: pointer;
+  margin-right: 10px;
 }
 .Catalog > p {
+  width: 100%;
   font-family: Jost;
   font-size: 25px;
   font-style: normal;
   font-weight: 400;
   line-height: 140%;
 }
-.Catalog > i {
+.MenuBtn{
+  display: none;
+}
+
+.burgerBtn {
+  width: 25px;
   font-size: 22px;
   color: #bb8c5f;
+  cursor: pointer;
 }
 .Catalog-Search {
   max-width: 418px;
@@ -310,7 +320,7 @@ body{
 }
 .Catalog-boxs {
   width: 618px;
-  max-height: 592px;
+  max-height: 700px;
   margin-left: 0;
   display: none;
   position: absolute;
@@ -404,7 +414,7 @@ body{
   width: 100%;
   height: 100%;
 }
-.hero-text > h3 {
+.hero-text-item > h3 {
   color: #bb8c5f;
   font-family: Forum;
   font-size: 75px;
@@ -412,7 +422,7 @@ body{
   font-weight: 400;
   line-height: 100%;
 }
-.hero-text > p {
+.hero-text-item > p {
   color: #faf6f2;
   font-family: Jost;
   font-size: 25px;
@@ -423,7 +433,7 @@ body{
   margin-left: 0;
   margin-top: 30px;
 }
-.hero-text > button {
+.hero-text-item > button {
   width: 275px;
   height: 70px;
   background-image: url("/images/bg/btnBg.png");
@@ -754,6 +764,9 @@ body{
   font-weight: 700;
   line-height: 110%;
   color: #3e424b;
+}
+.Katalog-btns{
+  display: none;
 }
 .K-item1 {
   width: 494px;
